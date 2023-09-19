@@ -1,6 +1,7 @@
 #include <stdio.h>
 int main(){
-	int num1, num2, sum;
+	int num1, num2;
+	float sum;
 	char oper;
 
 	printf("Enter the first number: ");
@@ -12,21 +13,26 @@ int main(){
 
 	if (oper == '*'){
 		sum = num1 * num2;
-		printf("The final out put is: .\n");
+		printf("The final out put is: %.2f .\n", sum);
 	}
-	else if(oper == '+'){
+	else if (oper == '+'){
+		sum = num1 + num2;
+		printf("Output is: %.2f.\n", sum);
+	}
+	else if (oper == '-'){
+		sum = num1 - num2;
+		printf("Output is: %.2f.\n", sum);
+	}
+	else if (oper == '/'){
+		sum = num1 / num2;
+		printf("Output is: %.2f.\n", sum);
+	}
+	else if (oper == '%'){
+		sum = num1 % num2;
+		printf("Output is: %.0f.\n", sum);
+	}
+	else printf("error\n");
 
-		printf("this is addition.\n");
-	}
-	else if(oper == '-'){
-		printf("this is subtraction.\n");
-	}
-	else if(oper == '/'){
-		printf("this is divison.\n");
-	}
-	else(oper == '%'){
-		printf("this is mod.\n");
-	}
 
 return 0;
 }
