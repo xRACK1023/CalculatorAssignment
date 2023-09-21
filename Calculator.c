@@ -13,23 +13,23 @@ int main(){
 
 	if (oper == '*'){
 		sum = num1 * num2;
-		printf("The final out put is: %.2f .\n", sum);
+		printf("Output is: %.0f \n", sum);
 	}
 	else if (oper == '+'){
 		sum = num1 + num2;
-		printf("Output is: %.2f.\n", sum);
+		printf("Output is: %.0f \n", sum);
 	}
 	else if (oper == '-'){
 		sum = num1 - num2;
-		printf("Output is: %.2f.\n", sum);
+		printf("Output is: %.0f \n", sum);
 	}
 	else if (oper == '/'){
 		sum = num1 / num2;
-		printf("Output is: %.2f.\n", sum);
+		printf("Output is: %.0f \n", sum);
 	}
 	else if (oper == '%'){
 		sum = num1 % num2;
-		printf("Output is: %.0f.\n", sum);
+		printf("Output is: %.0f \n", sum);
 	}
 	else printf("error\n");
 
